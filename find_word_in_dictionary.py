@@ -6,7 +6,7 @@ def find_word_label(f_read, word):
 		#if (word.upper() == dict_word.upper()):
 		
 		if (word == dict_word):
-			labels = f_read[i].split('/')[1].split(',')	
+			labels = f_read[i].split('/')[1].split('-')	
 			return labels;
 		
 	return -1;
