@@ -18,4 +18,7 @@
 - Thuật toán sử dụng: Duyệt hết từ đầu đến cuối từ điển
 - Nếu thuật toán quá chậm, có thể thay thế sử dụng các thuật toán khác để duyệt.
 
-## Lưu ý: Các đường dẫn trong các file là đường dẫn tuyệt đối, phải điều chỉnh khi download về và chạy chương trình.
+## Lưu ý: 
+- Các đường dẫn trong các file là đường dẫn tuyệt đối, phải điều chỉnh khi download về và chạy chương trình.
+- untagged folder là folder chứa các văn bản chưa được gán nhãn, cần gán nhãn. Hiện giờ chỉ có file ca1.txt để test với các nhãn giả.
+- Tập dictionary cũng gồm tất cả các nhãn của tập dữ liệu brown các nhãn giả, đang chờ cập nhật.
