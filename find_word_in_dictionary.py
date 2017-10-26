@@ -1,12 +1,5 @@
-path = "D:\\OneDrive for Business 1\\OneDrive - student.hust.edu.vn\\OD\\20171\\NLP\\Project\\pos_tagging_materials\\datasets\\brown"
-
-f = open(path + "\\dictionary.txt", 'r')
-f_read = f.read();
-f_read = f_read.split('\n')
-file_size = len(f_read)
-
-
-def find_word_label(word):
+def find_word_label(f_read, word):
+	file_size = len(f_read)
 	for i in range(file_size):
 		dict_word = f_read[i].split('/')[0]
 		# Compare upper case:
