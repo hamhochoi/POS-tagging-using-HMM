@@ -1,0 +1,5 @@
+The/a,b,c,d
+man/NN
+eat/v
+the/a,b,c
+meat/NN
