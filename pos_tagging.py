@@ -11,8 +11,9 @@ untagged_path = "D:\\OneDrive for Business 1\\OneDrive - student.hust.edu.vn\\OD
 untagged_dir = os.listdir(untagged_path)
 untagged_len = len(untagged_dir)
 
-# find all labels
-all_labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j']	
+# all labels
+all_labels = ['.', ';', '?', '!', '(', ')', '"', '``', '\'', '\`','*', '--', ',', ':', 'ABL', 'ABN', 'ABX', 'AP','AT','BE', 'BED', 'BEDZ', 'BEG', 'BEM', 'BEN','BER', 'BEZ', 'CC', 'CD', 'CS', 'DO', 'DOD','DOZ', 'DT', 'DTI', 'DTS', 'DTX', 'EX', 'FW','HL', 'HV', 'HVD', 'HVG', 'HVN', 'HVZ', 'IN','JJ','JJR', 'JJS', 'JJT', 'MD', 'NC', 'NN', 'NN$', 'NNS', 'NNS$', 'NP', 'NP$', 'NPS','NPS$', 'NR', 'NRS', 'OD', 'PN', 'PN$','PP$', 'PP$$', 'PPL', 'PPLS', 'PPO', 'PPS', 'PPSS','QL','QLP', 'RB', 'RBR', 'RBT', 'RN', 'RP','TL', 'TO', 'UH', 'VB', 'VBD', 'VBG', 'VBN','VBZ','WDT', 'WP$', 'WPO', 'WPS', 'WQL', 'WRB']
+#print ("LENG: ", len(all_labels))
 
 for i in range(untagged_len):	 
 	file_name = untagged_dir[i]
@@ -55,8 +56,8 @@ for i in range(untagged_len):
 			
 			
 		print (labels)
-		print (pre_labels)
-		print (pre_pre_labels)
+		#print (pre_labels)
+		#print (pre_pre_labels)
 		
 		
 	
