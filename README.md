@@ -5,7 +5,7 @@
 - Mỗi câu được viết trên 1 dòng (tính theo ký tự '\n')
 - Mỗi từ trong một câu được gán nhãn, các từ phân cách nhau bởi dấu cách; từ ghép được viết theo cú pháp "từ-ghép"; từ và nhãn tương ứng của nó được phân cách nhau bởi dấu '/'.
 - Thuật toán sử dụng là triagram HMM.
-- Mỗi câu sẽ được chèn thêm 2 fake word vào trước và 2 fake word vào sau.
+- Mỗi câu sẽ được chèn thêm 2 fake word "XXXXXX" vào trước và 2 fake word  "XXXXXX" vào sau.
 
 ## File read_next_token dùng để đọc một từ trong một dòng 
 -  Trong file này chỉ có một hàm: read_next_token(f_read, current_line, current_word)
