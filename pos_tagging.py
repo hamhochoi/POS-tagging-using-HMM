@@ -2,7 +2,8 @@ import os
 from read_next_token import read_next_token
 from find_word_in_dictionary import find_word_label
 
-untagged_path = "D:\\OneDrive for Business 1\\OneDrive - student.hust.edu.vn\\OD\\20171\\NLP\\Project\\pos_tagging_materials\\datasets\\brown"
+untagged_path = "D:\\OneDrive for Business 1\\OneDrive - student.hust.edu.vn\\OD\\20171\\NLP\\Project\\pos_tagging_materials\\datasets\\untagged"
+path = "D:\\OneDrive for Business 1\\OneDrive - student.hust.edu.vn\\OD\\20171\\NLP\\Project\\pos_tagging_materials\\datasets\\brown"
 
 untagged_dir = os.listdir(untagged_path)
 untagged_len = len(untagged_dir)
@@ -10,11 +11,10 @@ untagged_len = len(untagged_dir)
 # find all labels
 all_labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j']	
 
-for i in range(1):	 # untagged_len
+for i in range(untagged_len):	 
 	file_name = untagged_dir[i]
-	#path_file = untagged_path + "\\" + str(file_name)		# uncomment this
-	f = open(untagged_path + "\\ca1.txt", 'r')	# remove this
-	#f = open(path_file, 'r')
+	path_file = untagged_path + "\\" + str(file_name)		
+	f = open(path_file, 'r')
 	f_read = f.read();
 	f_read = f_read.split('\n')
 	file_size = len(f_read)
@@ -36,9 +36,9 @@ for i in range(1):	 # untagged_len
 			continue;
 		print (word)
 		
-		labels = find_word_label(word)
-		pre_labels = find_word_label(pre_word)
-		pre_pre_labels = find_word_label(pre_pre_word)
+		labels = find_word_label(f_read, word)
+		pre_labels = find_word_label(f_read, pre_word)
+		pre_pre_labels = find_word_label(f_read, pre_pre_word)
 		
 		if (labels == -1):
 			labels = all_labels
